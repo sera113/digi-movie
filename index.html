@@ -69,6 +69,27 @@
 
   </div>
 
+  
+  <div class="modal" id="songListModal">
+    <h2>Song List</h2>
+
+    <input
+        type="text"
+        id="songSearch"
+        placeholder="Search anime, song, artist..."
+        oninput="renderSongList()"
+    >
+
+    <p id="songListCount"></p>
+
+    <div id="songListContainer"></div>
+
+    <button class="close-button" onclick="closeSongList()">
+        Close
+    </button>
+  </div>
+
+
   <!-- Main -->
   <div id="main" class="main-page">
 
